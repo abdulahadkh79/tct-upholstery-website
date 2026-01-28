@@ -1,0 +1,15 @@
+{
+  "name": "tct-upholstery-website",
+  "version": "1.0.0",
+  "description": "Static TCT Upholstery site served with Express for Hostinger Git deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
