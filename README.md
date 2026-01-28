@@ -19,3 +19,11 @@ TCT Upholstery — Upload Instructions
    - If you want, I can create the zip with local image files included. Reply "include images" and I will fetch and bundle them.
 
 Good luck — upload this zip into `public_html` and the site will be live.
+
+Notes about Hostinger Git import:
+
+- Hostinger's Git deploy detects specific app types (Vite, Next.js, Express, etc.). To allow direct Git import and deployment from this repository, I added a minimal Node/Express server and `package.json`. This makes the repo recognizable as a Node app so Hostinger's Git deploy can build/start it.
+
+- After import, Hostinger should run `npm install` and start the app using `npm start`. No build step is required — the Express server serves the static files directly.
+
+- If you prefer to keep the site purely static on Hostinger, you can also upload `tct-upholstery-website.zip` to `public_html` via File Manager (no server required).
